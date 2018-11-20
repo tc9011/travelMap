@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>足迹</title>
+    <link rel="stylesheet" href="leaflet.css">
+    <style>
+        html, body, #map {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script src="main.min.js"></script>
+<script>
+  var map = L.map('map');
+  var baseLayers = {
+    'GeoQ灰色底图': L.tileLayer('http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}').addTo(map)
+  };
+  L.tileLayer('https://a.tiles.mapbox.com/v3/foursquare.map-0y1jh28j/{z}/{x}/{y}.png', {
+    attribution: 'Map &copy; Pacific Rim Coordination Center (PRCC).  Certain data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    key: 'BC9A493B41014CAABB98F0471D759707',
+    styleId: 22677
+  });
+
+  map.setView(L.latLng(37.550339, 104.114129), 4);
+  var overlay = new L.echartsLayer3(map, echarts);
+  var chartsContainer = overlay.getEchartsContainer();
+  var myChart = overlay.initECharts(chartsContainer);
+  var data = [
+    {name: '溧阳', value: 30, description: '出生地'},
+    {name: '海门', value: 30, description: '2016年5月'},
+    {name: '盐城', value: 30, description: '2014年1月'},
+    {name: '青岛', value: 30, description: '2004年6月'},
+    {name: '南通', value: 30, description: '2015年5月'},
+    {name: '拉萨', value: 30, description: '2012年8月'},
+    {name: '上海', value: 30, description: '2015年6月至今'},
+    {name: '威海', value: 30, description: '2004年6月'},
+    {name: '太仓', value: 30, description: '2013年9月'},
+    {name: '曲靖', value: 30, description: '2012年8月'},
+    {name: '烟台', value: 30, description: '2004年6月'},
+    {name: '昆山', value: 30, description: '2013年9月'},
+    {name: '连云港', value: 30, description: '2014年2月'},
+    {name: '常熟', value: 30, description: '2014年6月'},
+    {name: '东莞', value: 30, description: '2014年4月'},
+    {name: '泰州', value: 30, description: '2014年4月'},
+    {name: '江阴', value: 30, description: '2015年10月'},
+    {name: '蓬莱', value: 30, description: '2004年6月'},
+    {name: '广州', value: 30, description: '2014年4月'},
+    {name: '中山', value: 30, description: '2014年4月'},
+    {name: '昆明', value: 30, description: '2012年8月'},
+    {name: '深圳', value: 30, description: '2014年4月'},
+    {name: '珠海', value: 30, description: '2015年11月'},
+    {name: '宿迁', value: 30, description: '2016年5月'},
+    {name: '佛山', value: 30, description: '2014年4月'},
+    {name: '大连', value: 30, description: '2016年2月'},
+    {name: '吴江', value: 30, description: '2013年6月'},
+    {name: '苏州', value: 30, description: '2012年6月-2015年6月'},
+    {name: '嘉兴', value: 30, description: '2015年6月'},
+    {name: '长春', value: 30, description: '2015年2月'},
+    {name: '张家港', value: 30, description: '2014年5月'},
+    {name: '成都', value: 30, description: '2016年9月'},
+    {name: '镇江', value: 30, description: '2014年9月'},
+    {name: '扬州', value: 30, description: '2016年10月'},
+    {name: '常州', value: 30, description: '2004年7月'},
+    {name: '重庆', value: 30, description: '2012年8月'},
+    {name: '南京', value: 30, description: '2000年7月'},
+    {name: '无锡', value: 30, description: '2000年7月'},
+    {name: '北京', value: 30, description: '2010年12月'},
+    {name: '徐州', value: 30, description: '2013年7月'},
+    {name: '乌鲁木齐', value: 30, description: '2013年7月'},
+    {name: '杭州', value: 30, description: '2014年3月'},
+    {name: '库尔勒', value: 30, description: '2013年7月'},
+    {name: '兰州', value: 30, description: '2013年7月'},
+    {name: '天津', value: 30, description: '2009年10月'},
+    {name: '哈尔滨', value: 30, description: '2015年2月'},
+    {name: '芜湖', value: 30, description: '2008年7月'},
+    {name: '乌苏市', value: 30, description: '2013年7月'},
+    {name: '博尔塔拉蒙古自治州',value: 30, description: '2013年7月'},
+    {name: '伊犁哈萨克自治州', value: 30, description: '2013年7月'},
+    {name: '阿克苏地区', value: 30, description: '2013年7月'},
+    {name: '阿拉尔市', value: 30, description: '2013年7月'},
+    {name: '喀什', value: 30, description: '2013年7月'},
+    {name: '九寨沟',  value: 30, description: '2016年9月'},
+    {name: '林芝',  value: 30, description: '2012年8月'},
+    {name: '八宿县',  value: 30, description: '2012年8月'},
+    {name: '左贡县',  value: 30, description: '2012年8月'},
+    {name: '迪庆藏族自治州',  value: 30, description: '2012年8月'},
+    {name: '丽江',  value: 30, description: '2012年8月'},
+    {name: '大理白族自治州',  value: 30, description: '2012年8月'},
+    {name: '黄山',  value: 30, description: '2014年10月'},
+    {name: '石台',  value: 30, description: '2012年6月'},
+    {name: '普吉岛', value: 30, description: '2017年10月'},
+    {name: '巴塞罗那', value: 30, description: '2018年5月'}
+  ];
+  // GPS查询：http://www.gpsspg.com/maps.htm
+  var geoCoordMap = {
+    '溧阳':[119.48,31.43],
+    '海门':[121.15,31.89],
+    '盐城':[120.13,33.38],
+    '青岛':[120.33,36.07],
+    '南通':[121.05,32.08],
+    '拉萨':[91.11,29.97],
+    '上海':[121.48,31.22],
+    '威海':[122.1,37.5],
+    '太仓':[121.1,31.45],
+    '曲靖':[103.79,25.51],
+    '烟台':[121.39,37.52],
+    '昆山':[120.95,31.39],
+    '连云港':[119.16,34.59],
+    '常熟':[120.74,31.64],
+    '东莞':[113.75,23.04],
+    '泰州':[119.9,32.49],
+    '江阴':[120.26,31.91],
+    '蓬莱':[120.75,37.8],
+    '广州':[113.23,23.16],
+    '中山':[113.38,22.52],
+    '昆明':[102.73,25.04],
+    '深圳':[114.07,22.62],
+    '珠海':[113.52,22.3],
+    '宿迁':[118.3,33.96],
+    '佛山':[113.11,23.05],
+    '大连':[121.62,38.92],
+    '吴江':[120.63,31.16],
+    '苏州':[120.62,31.32],
+    '嘉兴':[120.76,30.77],
+    '长春':[125.35,43.88],
+    '张家港':[120.555821,31.875428],
+    '成都':[104.06,30.67],
+    '镇江':[119.44,32.2],
+    '扬州':[119.42,32.39],
+    '常州':[119.95,31.79],
+    '重庆':[106.54,29.59],
+    '南京':[118.78,32.04],
+    '无锡':[120.29,31.59],
+    '北京':[116.46,39.92],
+    '徐州':[117.2,34.26],
+    '乌鲁木齐':[87.68,43.77],
+    '杭州':[120.19,30.26],
+    '库尔勒':[86.06,41.68],
+    '兰州':[103.73,36.03],
+    '天津':[117.2,39.13],
+    '哈尔滨':[126.63,45.75],
+    '芜湖':[118.38,31.33],
+    '乌苏市': [84.6784851235,44.4355442184],
+    '博尔塔拉蒙古自治州': [82.0667463183,44.9060359568],
+    '伊犁哈萨克自治州': [81.3241299562,43.9168682735],
+    '阿克苏地区': [80.2600596049,41.1684028952],
+    '阿拉尔市': [81.2806416285,40.5479581186],
+    '喀什': [75.9961366076,39.4737953871],
+    '九寨沟': [103.9266619002,33.1852083851],
+    '林芝': [94.3615310187,29.6489397505],
+    '八宿县': [96.9177959405,30.0531593399],
+    '左贡县': [97.8408117030,29.6708836080],
+    '迪庆藏族自治州': [99.7030265169,27.8190665939],
+    '丽江': [100.2270834766,26.8564702761],
+    '大理白族自治州': [100.2676255101,25.6064683680],
+    '黄山': [118.1749482771,30.1296038928],
+    '石台': [117.4861996608,30.2102766712],
+    '普吉岛':[98.33333,7.96667],
+    '巴塞罗那': [2.1769,41.3825],
+  };
+  var convertData = function (data) {
+    var res = [];
+    for (var i = 0; i < data.length; i++) {
+      var geoCoord = geoCoordMap[data[i].name];
+      if (geoCoord) {
+        res.push({
+          name: data[i].name,
+          value: geoCoord.concat(data[i].value).concat(data[i].description),
+          tooltip: {
+            formatter: function (params) {
+              var description = params.value[params.value.length-1];
+              var tooltip = params.name;
+              if (description) {
+                tooltip += ": " + description;
+              }
+              return tooltip;
+            }
+          }
+        });
+      }
+    }
+    return res;
+  };
+  option = {
+    // backgroundColor: '#404a59',
+    tooltip : {
+      trigger: 'item'
+    },
+    legend: {
+      orient: 'vertical',
+      y: 'bottom',
+      x:'right',
+      data:['pm2.5'],
+      textStyle: {
+        color: '#fff'
+      }
+    },
+    geo: {
+      map: '',
+      label: {
+        emphasis: {
+          show: false
+        }
+      },
+      roam: true,
+      itemStyle: {
+        normal: {
+          areaColor: '#323c48',
+          borderColor: '#111'
+        },
+        emphasis: {
+          areaColor: '#2a333d'
+        }
+      }
+    },
+    series : [
+      {
+        name: '足迹',
+        type: 'effectScatter',
+        coordinateSystem: 'geo',
+        data: convertData(data),
+        symbolSize: function (val) {
+          return val[2] / 10;
+        },
+        showEffectOn: 'render',
+        rippleEffect: {
+          brushType: 'stroke'
+        },
+        hoverAnimation: true,
+        label: {
+          normal: {
+            formatter: '{b}',
+            position: 'right',
+            show: false
+          }
+        },
+        itemStyle: {
+          normal: {
+            color: '#f4e925',
+            shadowBlur: 10,
+            shadowColor: '#333'
+          }
+        },
+        zlevel: 1
+      }
+    ]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  overlay.setOption(option);
+</script>
+</body>
+</html>
