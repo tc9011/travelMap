@@ -1,5 +1,8 @@
 // GPS查询：http://www.gpsspg.com/maps.htm
 // value:地图上标记点大小
+// geoCoord:经纬度
+// description:描述文字
+
 var data = [
   {name: '溧阳', value: 30, description: '出生地', geoCoord:[31.43,119.48]},
   {name: '海门', value: 30, description: '2016年5月', geoCoord:[31.89,121.15]},
