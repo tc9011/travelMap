@@ -68,5 +68,5 @@ var data = [
   {name: '石台',  value: 30, description: '2012年6月', geoCoord: [30.2102766712,117.4861996608]},
   {name: '普吉岛', value: 30, description: '2017年10月', geoCoord: [7.96667,98.33333]},
   {name: '巴塞罗那', value: 30, description: '2018年5月', geoCoord:[41.3825,2.1769]}, 
-  {name: '伦敦', value: 30, description: '202月', geoCoord:[51.4993630000,-0.1399130000]},
+  {name: '伦敦', value: 30, description: '2019年2月', geoCoord:[51.4993630000,-0.1399130000]},
 ];
