@@ -69,4 +69,5 @@ var data = [
   {name: '普吉岛', value: 30, description: '2017年10月', geoCoord: [7.96667,98.33333]},
   {name: '巴塞罗那', value: 30, description: '2018年5月', geoCoord:[41.3825,2.1769]}, 
   {name: '伦敦', value: 30, description: '2019年2月', geoCoord:[51.4993630000,-0.1399130000]},
+  {name: '爱丁堡', value: 30, description: '2019年2月', geoCoord:[55.9482650000,-3.1990780000]},
 ];
