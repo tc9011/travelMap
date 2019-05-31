@@ -72,4 +72,5 @@ var data = [
   {name: '爱丁堡', value: 30, description: '2019年2月', geoCoord:[55.9482650000,-3.1990780000]},
   {name: '牛津', value: 30, description: '2019年2月', geoCoord:[51.7558560000,-1.2458030000]}, 
   {name: '巴斯', value: 30, description: '2019年2月', geoCoord:[51.3850790000,-2.3608540000]},
+  {name: '舟山', value: 30, description: '2019年5月', geoCoord:[29.9853966468,122.2077802540]},
 ];
