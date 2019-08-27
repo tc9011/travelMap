@@ -73,4 +73,5 @@ var data = [
   {name: '牛津', value: 30, description: '2019年2月', geoCoord:[51.7558560000,-1.2458030000]}, 
   {name: '巴斯', value: 30, description: '2019年2月', geoCoord:[51.3850790000,-2.3608540000]},
   {name: '舟山', value: 30, description: '2019年5月', geoCoord:[29.9853966468,122.2077802540]},
+  {name: '西安', value: 30, description: '2019年8月', geoCoord:[34.3428162100,108.9351709400]},
 ];
