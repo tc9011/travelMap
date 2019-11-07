@@ -74,4 +74,9 @@ var data = [
   {name: '巴斯', value: 30, description: '2019年2月', geoCoord:[51.3850790000,-2.3608540000]},
   {name: '舟山', value: 30, description: '2019年5月', geoCoord:[29.9853966468,122.2077802540]},
   {name: '西安', value: 30, description: '2019年8月', geoCoord:[34.3428162100,108.9351709400]},
+  {name: '伊斯坦布尔', value: 30, description: '2019年9月', geoCoord:[41.0082380000,28.9783590000]},
+  {name: '格雷梅', value: 30, description: '2019年 10月', geoCoord:[38.6422090000,34.8309400000]},
+  {name: '卡什', value: 30, description: '2019年 10月', geoCoord:[36.2036260000,29.6403860000]},
+  {name: '费特希耶', value: 30, description: '2019年 10月', geoCoord:[36.6592460000,29.1263470000]},
+  {name: '塞尔丘克', value: 30, description: '2019年 10月', geoCoord:[37.9490100000,27.3695800000]},
 ];
