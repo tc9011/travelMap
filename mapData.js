@@ -79,4 +79,5 @@ var data = [
   {name: '卡什', value: 30, description: '2019年 10月', geoCoord:[36.2036260000,29.6403860000]},
   {name: '费特希耶', value: 30, description: '2019年 10月', geoCoord:[36.6592460000,29.1263470000]},
   {name: '塞尔丘克', value: 30, description: '2019年 10月', geoCoord:[37.9490100000,27.3695800000]},
+  {name: '济州岛', value: 30, description: '2020年 1月', geoCoord:[33.4890120000,126.4983020000]},
 ];
