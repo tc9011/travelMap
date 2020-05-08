@@ -81,4 +81,8 @@ var data = [
   {name: '塞尔丘克', value: 30, description: '2019年 10月', geoCoord:[37.9490100000,27.3695800000]},
   {name: '济州岛', value: 30, description: '2020年 1月', geoCoord:[33.4890120000,126.4983020000]},
   {name: '嵊泗岛', value: 30, description: '2020年 4月', geoCoord:[30.7029059500,122.5053519000]},
+  {name: '张家界', value: 30, description: '2020年 4月', geoCoord:[29.356516,110.477465]},
+  {name: '凤凰', value: 30, description: '2020年 4月', geoCoord:[27.954777,109.610102]},
+  {name: '长沙', value: 30, description: '2020年 4月', geoCoord:[28.231172,112.949026]},
+  {name: '三亚', value: 30, description: '2020年 5月', geoCoord:[18.264894,109.507007]},
 ];
