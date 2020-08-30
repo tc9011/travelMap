@@ -85,4 +85,5 @@ var data = [
   {name: '凤凰', value: 30, description: '2020年 4月', geoCoord:[27.954777,109.610102]},
   {name: '长沙', value: 30, description: '2020年 4月', geoCoord:[28.231172,112.949026]},
   {name: '三亚', value: 30, description: '2020年 5月', geoCoord:[18.264894,109.507007]},
+  {name: '安庆', value: 30, description: '2020年 8月', geoCoord:[39.910925,116.413384]},
 ];
