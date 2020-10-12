@@ -86,4 +86,11 @@ var data = [
   {name: '长沙', value: 30, description: '2020年 4月', geoCoord:[28.231172,112.949026]},
   {name: '三亚', value: 30, description: '2020年 5月', geoCoord:[18.264894,109.507007]},
   {name: '安庆', value: 30, description: '2020年 8月', geoCoord:[30.532809, 117.091596]},
+  {name: '呼和浩特', value: 30, description: '2020年 9月', geoCoord:[40.80772, 111.62299]},
+  {name: '额济纳旗', value: 30, description: '2020年 9月', geoCoord:[41.95449, 101.05552]},
+  {name: '锡林浩特', value: 30, description: '2020年 10月', geoCoord:[43.93171651985938, 116.07452917480468]},
+  {name: '霍林郭勒', value: 30, description: '2020年 10月', geoCoord:[45.53141, 119.66359]},
+  {name: '阿尔山', value: 30, description: '2020年 10月', geoCoord:[47.1771, 119.94381]},
+  {name: '满洲里', value: 30, description: '2020年 10月', geoCoord:[49.59655, 117.37836]},
+  {name: '恩和俄罗斯民族乡', value: 30, description: '2020年 10月', geoCoord:[50.82266633366291, 119.91357912037657]},
 ];
