@@ -94,4 +94,5 @@ var data = [
   {name: '满洲里', value: 30, description: '2020年 10月', geoCoord:[49.59655, 117.37836]},
   {name: '恩和俄罗斯民族乡', value: 30, description: '2020年 10月', geoCoord:[50.82266633366291, 119.91357912037657]},
   {name: '澳门', value: 30, description: '2021年 1月', geoCoord:[22.19875, 113.54913]},
+  {name: '香港', value: 30, description: '2019年 4月', geoCoord:[22.27534, 114.16546]},
 ];
