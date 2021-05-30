@@ -1,4 +1,4 @@
-// GPS查询：http://www.gpsspg.com/maps.htm
+// GPS查询：http://map.jiqrxx.com/jingweidu/
 // value:地图上标记点大小
 // geoCoord:经纬度
 // description:描述文字
@@ -67,10 +67,10 @@ var data = [
   {name: '黄山',  value: 30, description: '2014年10月', geoCoord: [30.1296038928,118.1749482771]},
   {name: '石台',  value: 30, description: '2012年6月', geoCoord: [30.2102766712,117.4861996608]},
   {name: '普吉岛', value: 30, description: '2017年10月', geoCoord: [7.96667,98.33333]},
-  {name: '巴塞罗那', value: 30, description: '2018年5月', geoCoord:[41.3825,2.1769]}, 
+  {name: '巴塞罗那', value: 30, description: '2018年5月', geoCoord:[41.3825,2.1769]},
   {name: '伦敦', value: 30, description: '2019年2月', geoCoord:[51.4993630000,-0.1399130000]},
   {name: '爱丁堡', value: 30, description: '2019年2月', geoCoord:[55.9482650000,-3.1990780000]},
-  {name: '牛津', value: 30, description: '2019年2月', geoCoord:[51.7558560000,-1.2458030000]}, 
+  {name: '牛津', value: 30, description: '2019年2月', geoCoord:[51.7558560000,-1.2458030000]},
   {name: '巴斯', value: 30, description: '2019年2月', geoCoord:[51.3850790000,-2.3608540000]},
   {name: '舟山', value: 30, description: '2019年5月', geoCoord:[29.9853966468,122.2077802540]},
   {name: '西安', value: 30, description: '2019年8月', geoCoord:[34.3428162100,108.9351709400]},
@@ -95,4 +95,9 @@ var data = [
   {name: '恩和俄罗斯民族乡', value: 30, description: '2020年 10月', geoCoord:[50.82266633366291, 119.91357912037657]},
   {name: '澳门', value: 30, description: '2021年 1月', geoCoord:[22.19875, 113.54913]},
   {name: '香港', value: 30, description: '2019年 4月', geoCoord:[22.27534, 114.16546]},
+  {name: '千岛湖', value: 30, description: '2021年 3月', geoCoord:[30.317888,120.328438]},
+  {name: '安吉', value: 30, description: '2021年 4月', geoCoord:[30.63824,119.68219]},
+  {name: '贵阳', value: 30, description: '2021年 5月', geoCoord:[26.67865,106.62298]},
+  {name: '荔波', value: 30, description: '2021年 5月', geoCoord:[25.41144,107.88725]},
+  {name: '黎平肇兴侗寨', value: 30, description: '2021年 5月', geoCoord:[25.90559,109.183296]},
 ];
