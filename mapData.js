@@ -100,4 +100,5 @@ var data = [
   {name: '贵阳', value: 30, description: '2021年 5月', geoCoord:[26.67865,106.62298]},
   {name: '荔波', value: 30, description: '2021年 5月', geoCoord:[25.41144,107.88725]},
   {name: '黎平肇兴侗寨', value: 30, description: '2021年 5月', geoCoord:[25.90559,109.183296]},
+  {name: '上饶', value: 30, description: '2021年 6月', geoCoord:[28.698039, 117.058114]},
 ];
