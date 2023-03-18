@@ -101,4 +101,13 @@ var data = [
   {name: '荔波', value: 30, description: '2021年 5月', geoCoord:[25.41144,107.88725]},
   {name: '黎平肇兴侗寨', value: 30, description: '2021年 5月', geoCoord:[25.90559,109.183296]},
   {name: '上饶', value: 30, description: '2021年 6月', geoCoord:[28.698039, 117.058114]},
+  {name: '布尔津', value: 30, description: '2021年 10月', geoCoord:[47.707952, 86.88136]},
+  {name: '喀纳斯', value: 30, description: '2021年 10月', geoCoord:[48.700435, 87.042951]},
+  {name: '禾木', value: 30, description: '2021年 10月', geoCoord:[48.574346, 87.439506]},
+  {name: '塔什库尔干县', value: 30, description: '2021年 10月', geoCoord:[37.780943, 75.236866]},
+  {name: '桐庐', value: 30, description: '2022年 8月', geoCoord:[29.798585, 119.697599]},
+  {name: '厦门', value: 30, description: '2023年 1月', geoCoord:[24.485407, 118.096435]},
+  {name: '平潭', value: 30, description: '2023年 1月', geoCoord:[25.5047, 119.796501]},
+  {name: '泉州', value: 30, description: '2023年 1月', geoCoord:[24.879952, 118.682446]},
+  {name: '张家口', value: 30, description: '2023年 2月', geoCoord:[40.980478, 115.289549]},
 ];
