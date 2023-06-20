@@ -110,4 +110,7 @@ var data = [
   {name: '平潭', value: 30, description: '2023年 1月', geoCoord:[25.5047, 119.796501]},
   {name: '泉州', value: 30, description: '2023年 1月', geoCoord:[24.879952, 118.682446]},
   {name: '张家口', value: 30, description: '2023年 2月', geoCoord:[40.980478, 115.289549]},
+  {name: '伊宁市', value: 30, description: '2023年 4月', geoCoord:[43.9095, 81.27725]},
+  {name: '顺德', value: 30, description: '2023年 6月', geoCoord:[22.810453, 113.300453]},
+  {name: '武汉市', value: 30, description: '2023年 6月', geoCoord:[30.598467, 114.311582]},
 ];
