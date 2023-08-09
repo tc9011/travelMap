@@ -113,4 +113,6 @@ var data = [
   {name: '伊宁市', value: 30, description: '2023年 4月', geoCoord:[43.9095, 81.27725]},
   {name: '顺德', value: 30, description: '2023年 6月', geoCoord:[22.810453, 113.300453]},
   {name: '武汉市', value: 30, description: '2023年 6月', geoCoord:[30.598467, 114.311582]},
+  {name: '沈阳市', value: 30, description: '2023年 5月', geoCoord:[41.80515,123.46987]},
+  {name: '南昌市', value: 30, description: '2023年 8月', geoCoord:[28.54538,115.94422]},
 ];
