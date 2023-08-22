@@ -115,4 +115,7 @@ var data = [
   {name: '武汉市', value: 30, description: '2023年 6月', geoCoord:[30.598467, 114.311582]},
   {name: '沈阳市', value: 30, description: '2023年 5月', geoCoord:[41.80515,123.46987]},
   {name: '南昌市', value: 30, description: '2023年 8月', geoCoord:[28.54538,115.94422]},
+  {name: '曼彻斯特', value: 30, description: '2023年 8月', geoCoord:[53.480709,-2.234380]},
+  {name: '贝尔法斯特', value: 30, description: '2023年 8月', geoCoord:[53.480709,-2.234380]},
+  {name: '都柏林', value: 30, description: '2023年 8月', geoCoord:[54.597286,-5.930120]},
 ];
